@@ -5,13 +5,13 @@ This is a sample 'hello-world' server using [aiohttp](aiohttp.readthedocs.io).
 Build the docker image with the command:
 
 ```
-docker build -t c .
+docker build -t crypto .
 ```
 
 Run the docker container with the command:
 
 ```
-docker run -p 5858:5858 docker-aiohttp-hello-world
+docker run -p 5500:5500 crypto
 ```
 
 You can hit the server at http://localhost:5858 and http://localhost:5858/other-routes .  
