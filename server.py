@@ -1,6 +1,10 @@
 from aiohttp import web
 
 
+async def hello(request):
+    return web.Response(text="Hello, world")
+
+
 async def handle(request):
     name = request.match_info.get('name', "World!")
     text = "Hello, " + name
@@ -9,7 +13,8 @@ async def handle(request):
 
 
 app = web.Application()
+app.router.add_get('/hello', hello)
 app.router.add_get('/', handle)
 app.router.add_get('/{name}', handle)
 
-web.run_app(app, port=5858)
+web.run_app(app, port=5500)

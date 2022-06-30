@@ -5,7 +5,7 @@ This is a sample 'hello-world' server using [aiohttp](aiohttp.readthedocs.io).
 Build the docker image with the command:
 
 ```
-docker build -t docker-aiohttp-hello-world .
+docker build -t c .
 ```
 
 Run the docker container with the command:
